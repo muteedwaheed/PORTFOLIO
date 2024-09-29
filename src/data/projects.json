@@ -18,6 +18,6 @@
     "imageSrc": "projects/bbc.jpeg",
     "description": "The BBC News website UI clone was created using HTML, CSS, and the framework Bootstrap .",
     "skills": ["Html", "Css","Bootstrap"],
-    "source": "https://vercel.com/muteeb-s-projects/bbc-newsithub.com/muteedwaheed/bbc_news"
+    "source": "https://bbc-news-bice.vercel.app/"
   }
 ]
