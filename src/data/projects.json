@@ -4,20 +4,20 @@
     "imageSrc": "projects/crypto.jpeg",
     "description": "This project is a crypto UI design that is created using Chakra UI, and Axios is used to fetch data from a REST API",
     "skills": ["React","Chakra"],
-    "source": "https://github.com/muteedwaheed/crypto-app"
+    "source": "https://crypto-app-nu-five.vercel.app/"
   },
   {
     "title": "TechyStar UI",
     "imageSrc": "projects/star.jpeg",
     "description": "The TechyStar web UI design has been created to improve learning efficiency, and Sass has been used for styling",
     "skills": ["React","Sass"],
-    "source": "https://github.com/muteedwaheed/TECHYSTAR"
+    "source": "https://techystar-sable.vercel.app/"
   },
   {
     "title": "BBC Ui",
     "imageSrc": "projects/bbc.jpeg",
     "description": "The BBC News website UI clone was created using HTML, CSS, and the framework Bootstrap .",
     "skills": ["Html", "Css","Bootstrap"],
-    "source": "https://github.com/muteedwaheed/bbc_news"
+    "source": "https://vercel.com/muteeb-s-projects/bbc-newsithub.com/muteedwaheed/bbc_news"
   }
 ]
