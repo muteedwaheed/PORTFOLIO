@@ -8,7 +8,7 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Muteeb</h1>
+        <h1 className={styles.title}>Hi I'm Muteeb</h1>
         <p className={styles.description}>
           I'm a frontend developer using React. Reach out if you'd like to learn more!
         </p>
@@ -17,7 +17,7 @@ export const Hero = () => {
         </a>
       </div>
       <img
-        src={getImageUrl("hero/1.jpeg")}
+        src={getImageUrl("hero/muteeb.jpg")}
         alt="Hero image of me"
         className={styles.heroImg}
       />

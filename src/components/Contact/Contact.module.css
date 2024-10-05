@@ -31,11 +31,11 @@
   list-style: none;
   gap: 26px;
 }
-
 .link {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 15px; /* Reduce gap between the icon and text */
+  padding: 5px 0; /* Optional padding for better spacing */
 }
 
 .link a {
@@ -44,6 +44,13 @@
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1.5px;
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+}
+
+.link img {
+  width: 40px; /* Set consistent width for all icons */
+  height: 40px; /* Set consistent height for all icons */
+  object-fit: contain; /* Make sure icons scale properly */
 }
 
 @media screen and (max-width: 830px) {
@@ -58,7 +65,24 @@
     align-items: center;
   }
 
+  .text h2 {
+    font-size: 40px; /* Adjust the font size for small screens */
+    letter-spacing: 2px;
+  }
+
   .links {
     align-items: center;
+  }
+
+  .link {
+    display: flex;
+    align-items: center; /* Ensure the icon and text are vertically centered */
+    gap: 10px; /* Reduce the gap for smaller screens */
+    flex-wrap: nowrap; /* Prevent wrapping so that text and icon stay in one line */
+  }
+
+  .link img {
+    width: 30px; /* Adjust icon size for smaller screens */
+    height: 30px;
   }
 }

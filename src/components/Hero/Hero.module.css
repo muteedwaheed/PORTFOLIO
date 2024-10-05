@@ -48,11 +48,13 @@
   font-weight: 600;
   padding: 17px 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow:10px  7px 20px white
 }
 
 .heroImg {
-  width: 50%;
+  width: 30%;
   z-index: 1;
+  /* box-shadow:10px  7px 20px white; */
 
   animation-name: floating;
   animation-duration: 3s;
@@ -123,6 +125,37 @@
 .whatsappBtn:hover {
   background-color: #128C7E; /* Darker green on hover */
 }
+@keyframes typing {
+  from {
+    width: 0; /* Start with a width of 0 */
+  }
+  to {
+    width: 57%; /* End with the specified width of the text */
+  }
+}
+
+.title {
+  display: inline-block; /* Ensures the width fits the content */
+  overflow: hidden; /* Ensures that text does not overflow the container */
+  white-space: nowrap; /* Prevents the text from wrapping to the next line */
+  border-right: 2px solid var(--color-text); /* Creates a cursor effect */
+  animation: typing 3s steps(30, end) forwards; /* Use 'forwards' to maintain end state */
+}
+
+/* Optional: Blinking cursor effect */
+.blink {
+  border-right: 3px solid var(--color-text); /* Creates a blinking effect */
+  animation: blink-caret 0.75s step-end infinite; /* Apply blinking only when the cursor is visible */
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-text);
+  }
+}
 
 @media screen and (max-width: 830px) {
   .container {
@@ -131,5 +164,50 @@
 
   .content {
     align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  
+  .description {
+    font-size: 20px; /* Adjust the description size for tablets */
+  }
+  .title {
+    font-size: 48px; /* Adjust font size for tablets */
+    margin-top: 20px; /* Add margin to push the title down */
+  }
+  .contactBtn {
+    padding: 12px 25px;  /* Slightly smaller padding for tablets */
+    font-size: 18px;
+  }
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 480px) {
+  .description {
+    font-size: 18px; /* Reduce description size slightly for mobiles */
+  }
+  .title {
+    font-size: 36px; /* Adjust font size for mobiles */
+    margin-top: 30px;
+    margin-right: 18px; /* Increase the margin to push title down further */
+  }
+  .contactBtn {
+    padding: 10px 20px;  /* Smaller padding for mobile screens */
+    font-size: 16px;     /* Reduce font size for mobiles */
+  }
+}
+@media screen and (max-width: 480px) {
+  .whatsappBtn img {
+    width: 40px;  /* Smaller size for mobile devices */
+  }
+}
+@media (max-width: 600px) { /* Adjust this breakpoint as needed */
+  .title {
+    font-size: 24px; /* Adjust font size for small screens */
+    width: 80%; /* Adjust width for small screens to be more responsive */
+  }
+
+  .blink {
+    border-right: 2px solid var(--color-text); /* Adjust cursor size for small screens */
   }
 }
